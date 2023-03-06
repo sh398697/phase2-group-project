@@ -20,7 +20,7 @@ function BookCard({book, removeBookFromState}) {
           <p>Author: {book.author}</p>
           <p>Genre: {book.genre}</p>
           <p>Published: {book.year}</p>
-          <img src={book.image} alt={book.title} />
+          <img src={book.image} alt={book.title} width="300px" />
           <p>{book.review}</p>
           <button type="button" onClick={()=>handleDelete(book.id)} >Remove Book</button>
         </li>
