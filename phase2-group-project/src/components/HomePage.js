@@ -1,8 +1,7 @@
 import React from "react";
-import BookList from "./BookList";
 import NewBookForm from "./NewBookForm";
 import Search from "./Search";
-import './App.css';
+import BookList from "./BookList";
 
 function App() {
   return (

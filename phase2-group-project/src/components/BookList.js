@@ -2,12 +2,13 @@ import React from "react";
 import BookCard from "./BookCard";
 
 function BookList() {
-    return (
-        <ul className="cards">{plantCards}</ul>
-      );
-  
-  }
-  
-
+  return (
+      <div className="bookList">
+        <div>BOOK LIST</div>
+        <BookCard />
+      </div>
+    );
+ 
+}
 
 export default BookList;

@@ -1,21 +1,12 @@
-
+import React from "react";
 
 function BookCard() {
+  return (
+      <div className="bookCard">
+        <div>BOOK CARD</div>
+      </div>
+    );
+ 
+}
 
-    return (
-        <li className="card">
-          <img src='image' alt='name' />
-          <h4>Name</h4>
-          <p>Price: </p>
-          {false ? (
-            <button className="primary">In Stock</button>
-          ) : (
-            <button>Out of Stock</button>
-          )}
-        </li>
-      );
-    }
-      
-    
-    
-    export default BookCard;
+export default BookCard;
