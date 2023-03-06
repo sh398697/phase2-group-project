@@ -12,6 +12,9 @@ function App() {
       <Route path="/">
         <HomePage />
       </Route>
+      <Route path="/books">
+        <HomePage />
+      </Route>
     </div>
     );
 }

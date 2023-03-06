@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import ReactDOM from 'react-dom/client';
+import { Route, Switch } from "react-router-dom";
 import NewBookForm from "./NewBookForm";
 import Search from "./Search";
 import BookList from "./BookList";
@@ -40,8 +42,12 @@ function App() {
 
   return (
       <div className="homePage">
-        <NewBookForm addBookToState={ addBookToState }/>
-        <Search changeSearchTerm={ changeSearchTerm } />
+        <Route path="/newbook">
+          <NewBookForm addBookToState={ addBookToState }/>
+        </Route>
+        <Route path="/search">
+          <Search changeSearchTerm={ changeSearchTerm } />
+        </Route>
         <BookList books={searchedBooks} removeBookFromState={removeBookFromState} />
       </div>
     );
