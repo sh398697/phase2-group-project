@@ -5,7 +5,7 @@ import NewBookForm from "./NewBookForm";
 import Search from "./Search";
 import BookList from "./BookList";
 
-function App() {
+function HomePage() {
 
   const [books, setBooks] = useState([])
 
@@ -42,16 +42,11 @@ function App() {
 
   return (
       <div className="homePage">
-        <Route path="/newbook">
-          <NewBookForm addBookToState={ addBookToState }/>
-        </Route>
-        <Route path="/search">
-          <Search changeSearchTerm={ changeSearchTerm } />
-        </Route>
+        <NewBookForm addBookToState={ addBookToState }/>
+        <Search changeSearchTerm={ changeSearchTerm } />
         <BookList books={searchedBooks} removeBookFromState={removeBookFromState} />
       </div>
     );
- 
 }
 
-export default App;
+export default HomePage;

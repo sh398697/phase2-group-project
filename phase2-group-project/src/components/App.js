@@ -8,13 +8,9 @@ import Search from "./Search";
 
 function App() {
   return (
-    <div>
-      <Route path="/">
-        <HomePage />
-      </Route>
-      <Route path="/books">
-        <HomePage />
-      </Route>
+    <div>       
+      <Header />
+      <HomePage />
     </div>
     );
 }
