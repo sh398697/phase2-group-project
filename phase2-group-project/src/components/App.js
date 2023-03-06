@@ -1,14 +1,18 @@
 import React from "react";
+import ReactDOM from 'react-dom/client';
+import { Route, Switch } from "react-router-dom";
 import Header from "./Header";
 import HomePage from "./HomePage";
 import '../App.css';
+import Search from "./Search";
 
 function App() {
   return (
-      <div className="app">
-        <Header />
+    <div>
+      <Route path="/">
         <HomePage />
-      </div>
+      </Route>
+    </div>
     );
 }
 
