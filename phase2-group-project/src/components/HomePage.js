@@ -5,10 +5,19 @@ import BookList from "./BookList";
 
 function App() {
 
-  const [ books, setBooks ] = useState( [] )
+  const [books, setBooks] = useState([])
 
   const addBookToState = bookObj => {
     setBooks( [ ...books, bookObj ] )
+  }
+
+  function removeBookFromState(bookID) {
+    
+    const filteredArray = books.filter(book => {
+      return (book.id !== bookID)
+    })
+    console.log("Delete function")
+    setBooks(filteredArray)
   }
 
   const [ searchTerm, setSearchTerm ] = useState( '' )
@@ -31,9 +40,9 @@ function App() {
 
   return (
       <div className="homePage">
-        <NewBookForm addBookToState={ addBookToState } />
+        <NewBookForm addBookToState={ addBookToState }/>
         <Search changeSearchTerm={ changeSearchTerm } />
-        <BookList books={searchedBooks} />
+        <BookList books={searchedBooks} removeBookFromState={removeBookFromState} />
       </div>
     );
  
