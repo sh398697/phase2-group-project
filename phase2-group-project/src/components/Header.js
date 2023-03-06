@@ -3,7 +3,12 @@ import React from "react";
 function Header() {
   return (
     <header>
-      <h1>Book Finder</h1>
+      <h1>
+        Book Finder
+        <span className="logo" role="img">
+        
+        </span>
+      </h1>
     </header>
   );
 }

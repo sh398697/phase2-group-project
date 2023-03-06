@@ -2,8 +2,9 @@ import React from "react";
 import BookList from "./BookList";
 import NewBookForm from "./NewBookForm";
 import Search from "./Search";
+import './App.css';
 
-function HomePage() {
+function App() {
   return (
       <div className="homePage">
         <NewBookForm />
@@ -14,4 +15,4 @@ function HomePage() {
  
 }
 
-export default HomePage;
+export default App;
