@@ -7,6 +7,7 @@ import MyBooks from "./MyBooks";
 import HomePage from "./HomePage";
 import '../App.css';
 import Search from "./Search";
+import About from "./About";
 
 function App() {
   
@@ -17,8 +18,6 @@ function App() {
 
 
   function checkOutBook(book) {
-    
-    const newOwner = currentUser;
 
     setUpdatedBook( {
         title: book.title,
@@ -26,30 +25,46 @@ function App() {
         genre: book.genre,
         image: book.image,
         review: book.review,
-        owner: newOwner
+        owner: currentUser
     });
 
     console.log(book.title);
-    console.log(updatedBook);
 
      fetch(`http://localhost:6001/books/${book.id}`, {
         method: 'PUT',
         headers: {
           'Content-type': 'application/json',
         },
-        body: JSON.stringify(updatedBook),
+        body: JSON.stringify({
+          title: book.title,
+          author: book.author,
+          genre: book.genre,
+          image: book.image,
+          review: book.review,
+          owner: currentUser
+      }),
       });
   
-    }
+  }
 
 
-  
   return (
     <div>       
       <Header />
-      <Login currentUser={currentUser} setCurrentUser={setCurrentUser}/>
-      <MyBooks books={books} currentUser={currentUser} />
-      <HomePage books={books} setBooks={setBooks} currentUser={currentUser} checkOutBook={checkOutBook} />
+      <Switch>
+        <Route exact path="/login">
+          <Login currentUser={currentUser} setCurrentUser={setCurrentUser}/>
+        </Route>
+          <Route exact path="/mybooks">
+        <MyBooks books={books} currentUser={currentUser} />
+        </Route>
+        <Route exact path="/about">
+          <About />
+        </Route>
+        <Route exact path="/">
+          <HomePage books={books} setBooks={setBooks} currentUser={currentUser} checkOutBook={checkOutBook} />
+        </Route>
+      </Switch>
     </div>
     );
 }

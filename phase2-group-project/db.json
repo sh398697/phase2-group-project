@@ -10,14 +10,13 @@
       "id": 1
     },
     {
-      "id": 2,
       "title": "The Likeness",
       "author": "Tana French",
       "genre": "Mystery",
-      "year": "2009",
       "image": "https://m.media-amazon.com/images/I/51iUsYh6HaL._SL350_.jpg",
       "review": "Even better than the first book!",
-      "owner": ""
+      "owner": "",
+      "id": 2
     },
     {
       "title": "Still Life",
