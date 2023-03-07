@@ -4,12 +4,12 @@ import { Route } from "react-router-dom";
 
 function Login({currentUser, setCurrentUser}) {
     
-    function handleUserChange(e) {
-        setCurrentUser(e.target.value);
+    function handleLogoutClick(e) {
+        setCurrentUser("");
     }
 
-    function handleLogoutClick() {
-        setCurrentUser("");
+    function handleLoginClick(e) {
+        setCurrentUser(e.target.username.value);
     }
 
     return (
@@ -22,7 +22,11 @@ function Login({currentUser, setCurrentUser}) {
                 <span>{currentUser}  </span>
                 <div><button onClick={handleLogoutClick}>Logout</button></div>
             </div>) : 
-            (<input type="text" name="username" placeholder="username" onChange={handleUserChange}></input>)}
+            (
+            <form onSubmit={handleLoginClick}>
+                <input type="text" name="username" placeholder="username" id="username"></input>
+                <button type="submit">Login</button>
+            </form>)}
     </div>
   );
 }
