@@ -5,9 +5,9 @@ import { Route } from "react-router-dom";
 function About() {
   return (
     <Route path="/about">
-        <header>
+        <div>
             <h1>This is our About page!</h1>
-        </header>
+        </div>
     </Route>
   );
 }

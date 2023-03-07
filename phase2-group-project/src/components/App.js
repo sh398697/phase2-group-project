@@ -13,20 +13,24 @@ function App() {
   const [books, setBooks] = useState([])
   const [currentUser, setCurrentUser] = useState('')
 
-  const [updatedBook, setUpdatedBook] = useState([]);
+  const [updatedBook, setUpdatedBook] = useState([])
 
 
   function checkOutBook(book) {
-    setUpdatedBook(() => {
-      return {
+    
+    const newOwner = currentUser;
+
+    setUpdatedBook( {
         title: book.title,
         author: book.author,
         genre: book.genre,
         image: book.image,
         review: book.review,
-        owner: {currentUser}
-      };
+        owner: newOwner
     });
+
+    console.log(book.title);
+    console.log(updatedBook);
 
      fetch(`http://localhost:6001/books/${book.id}`, {
         method: 'PUT',
@@ -35,9 +39,8 @@ function App() {
         },
         body: JSON.stringify(updatedBook),
       });
-    }
   
-
+    }
 
 
   

@@ -29,7 +29,7 @@ function BookCard({book, removeBookFromState, currentUser, checkOutBook}) {
           { book.owner ? (
             <div>Checked out to: {book.owner}</div>
           ) : (
-            <button>Check Me Out</button>
+            <button onClick={handleCheckOutClick}>Check Me Out</button>
           )}
           <p></p>
       </div>

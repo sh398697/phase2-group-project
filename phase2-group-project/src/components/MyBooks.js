@@ -10,12 +10,8 @@ function MyBooks({books, currentUser}) {
         }
     })
 
-    console.log("Current user:")
-    console.log(currentUser)
-    console.log(myBooks)
-
     const bookList = myBooks.map(book => {
-        return <div>{book.title}</div>
+        return <div key={book.id}>{book.title}</div>
     })
 
 
