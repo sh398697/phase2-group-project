@@ -1,8 +1,6 @@
 import React from "react";
 
-function BookCard({book, removeBookFromState}) {
-  
-
+function BookCard({book, removeBookFromState, currentUser, checkOutBook}) {
 
   function handleDelete(id) {
     fetch(`http://localhost:6001/books/${id}`, {
@@ -12,18 +10,28 @@ function BookCard({book, removeBookFromState}) {
       .then(r => r.json())
       .then(() => removeBookFromState(id)      )
   }
-  
+
+  function handleCheckOutClick(e) {
+    //Update book to owner=currentUser
+    checkOutBook(book);
+  }
+
   return (
       <div className="card">
-        <li>
-          <p>Title: {book.title}</p>
-          <p>Author: {book.author}</p>
-          <p>Genre: {book.genre}</p>
-          <p>Published: {book.year}</p>
+          <div>Title: {book.title}</div>
+          <div>Author: {book.author}</div>
+          <div>Genre: {book.genre}</div>
+          <div>Published: {book.year}</div>
           <img src={book.image} alt={book.title} width="300px" />
-          <p>{book.review}</p>
+          <div>{book.review}</div>
           <button type="button" onClick={()=>handleDelete(book.id)} >Remove Book</button>
-        </li>
+
+          { book.owner ? (
+            <div>Checked out to: {book.owner}</div>
+          ) : (
+            <button>Check Me Out</button>
+          )}
+          <p></p>
       </div>
     );
 }

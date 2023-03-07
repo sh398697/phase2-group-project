@@ -5,9 +5,7 @@ import NewBookForm from "./NewBookForm";
 import Search from "./Search";
 import BookList from "./BookList";
 
-function HomePage() {
-
-  const [books, setBooks] = useState([])
+function HomePage({books, setBooks, currentUser, checkOutBook}) {
 
   const addBookToState = bookObj => {
     setBooks( [ ...books, bookObj ] )
@@ -18,7 +16,6 @@ function HomePage() {
     const filteredArray = books.filter(book => {
       return (book.id !== bookID)
     })
-    console.log("Delete function")
     setBooks(filteredArray)
   }
 
@@ -42,9 +39,9 @@ function HomePage() {
 
   return (
       <div className="homePage">
-        <NewBookForm addBookToState={ addBookToState }/>
+        <NewBookForm currentUser={currentUser} addBookToState={ addBookToState }/>
         <Search changeSearchTerm={ changeSearchTerm } />
-        <BookList books={searchedBooks} removeBookFromState={removeBookFromState} />
+        <BookList books={searchedBooks} removeBookFromState={removeBookFromState} currentUser={currentUser} checkOutBook={checkOutBook} />
       </div>
     );
 }

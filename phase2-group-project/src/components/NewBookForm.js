@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function NewBookForm({addBookToState}) {
+function NewBookForm({currentUser, addBookToState}) {
   
   const [ newTitle, setTitle ] = useState( '' )
   const [ newAuthor, setAuthor ] = useState( '' )
@@ -25,7 +25,8 @@ function NewBookForm({addBookToState}) {
       genre: newGenre,
       year: newYear,
       image: newImage,
-      review: newReview
+      review: newReview,
+      owner: currentUser
     }
 
     fetch( 'http://localhost:6001/books', {

@@ -7,7 +7,8 @@
       "genre": "Mystery",
       "year": "2008",
       "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1562761513i/2459785.jpg",
-      "review": "Great debut novel!"
+      "review": "Great debut novel!",
+      "owner": ""
     },
     {
       "id": 2,
@@ -16,7 +17,8 @@
       "genre": "Mystery",
       "year": "2009",
       "image": "https://m.media-amazon.com/images/I/51iUsYh6HaL._SL350_.jpg",
-      "review": "Even better than the first book!"
+      "review": "Even better than the first book!",
+      "owner": "Scott"
     },
     {
       "id": 3,
@@ -25,7 +27,8 @@
       "genre": "Mystery",
       "year": "2005",
       "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1324373974i/338691.jpg",
-      "review": "It's good!"
+      "review": "It's good!",
+      "owner": ""
     },
     {
       "id": 4,
@@ -34,7 +37,8 @@
       "genre": "Mystery",
       "year": "2014",
       "image": "https://m.media-amazon.com/images/I/51ZwRHcGZkL._SX331_BO1,204,203,200_.jpg",
-      "review": "Another great entry in the Inspector Gamache series!"
+      "review": "Another great entry in the Inspector Gamache series!",
+      "owner": ""
     },
     {
       "id": 5,
@@ -43,16 +47,18 @@
       "genre": "Mystery",
       "year": "2014",
       "image": "https://m.media-amazon.com/images/I/51ZwRHcGZkL._SX331_BO1,204,203,200_.jpg",
-      "review": "Another great entry in the Inspector Gamache series!"
+      "review": "Another great entry in the Inspector Gamache series!",
+      "owner": ""
     },
     {
-      "title": "Scott's Book",
-      "author": "Scott henry",
-      "genre": "Murder",
-      "year": "2023",
-      "image": "https://sacajaweaaudubon.org/wp-content/uploads/2020/06/a-lot-of-books-clipart-6.png",
-      "review": "Best book ever.",
-      "id": 6
+      "id": 6,
+      "title": "How the Light Gets In",
+      "author": "Louise Penny",
+      "genre": "Mystery",
+      "year": "2014",
+      "image": "https://m.media-amazon.com/images/I/51ZwRHcGZkL._SX331_BO1,204,203,200_.jpg",
+      "review": "Another great entry in the Inspector Gamache series!",
+      "owner": "Scott"
     }
   ]
 }

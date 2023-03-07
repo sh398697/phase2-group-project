@@ -6,13 +6,14 @@ function Search({ changeSearchTerm }) {
 
   return (
     <div className="searchbar">
-      <label htmlFor="search">Search Books:</label>
+      <h2>Search Books:</h2>
       <input
         type="text"
         id="search"
         placeholder="Type a title to search..."
         onChange={ handleSearch }
       />
+      <p></p>
     </div>
   );
 } 
