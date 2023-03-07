@@ -16,18 +16,6 @@ function App() {
 
   function checkOutBook(book) {
 
-    const updatedBook = {
-        title: book.title,
-        author: book.author,
-        genre: book.genre,
-        image: book.image,
-        review: book.review,
-        owner: currentUser
-    };
-
-    console.log(book);
-    console.log(updatedBook);
-
     const updatedBooks = books.map(bookObj => {
       if ((bookObj.id) === (book.id)) {
         bookObj.owner = currentUser;
@@ -36,8 +24,6 @@ function App() {
         return bookObj;
       }
     });
-
-    setBooks(updatedBooks);
 
      fetch(`http://localhost:6001/books/${book.id}`, {
         method: 'PATCH',
@@ -48,7 +34,32 @@ function App() {
           owner: currentUser
       }),
       });
-  
+      
+      setBooks(updatedBooks);
+  }
+
+  function returnBook(book) {
+    
+    const updatedBooks = books.map(bookObj => {
+      if ((bookObj.owner) === (currentUser)) {
+        bookObj.owner = "";
+        return bookObj;
+      } else {
+        return bookObj;
+      }
+    });
+
+     fetch(`http://localhost:6001/books/${book.id}`, {
+        method: 'PATCH',
+        headers: {
+          'Content-type': 'application/json',
+        },
+        body: JSON.stringify({
+          owner: ""
+      }),
+      });
+      
+      setBooks(updatedBooks);
   }
 
 
@@ -60,7 +71,7 @@ function App() {
           <Login currentUser={currentUser} setCurrentUser={setCurrentUser}/>
         </Route>
           <Route exact path="/mybooks">
-        <MyBooks books={books} currentUser={currentUser} />
+        <MyBooks books={books} currentUser={currentUser} returnBook={returnBook} />
         </Route>
         <Route exact path="/about">
           <About />

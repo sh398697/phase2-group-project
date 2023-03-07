@@ -1,6 +1,6 @@
 import React from "react";
 
-function MyBooks({books, currentUser}) {
+function MyBooks({books, currentUser, returnBook}) {
   
     const myBooks = books.filter(book => {
         if (book.owner === currentUser && currentUser != "") {
@@ -10,8 +10,18 @@ function MyBooks({books, currentUser}) {
         }
     })
 
+    function handleReturnBookClick(book) {
+        console.log(book);
+        returnBook(book);
+    }
+
     const bookList = myBooks.map(book => {
-        return <div key={book.id}>{book.title}</div>
+        return (
+            <div>
+                <div key={book.id}>{book.title}</div>
+                <button key={book.id} onClick={() => handleReturnBookClick(book)}>Return Book</button>
+            </div>
+        )
     })
 
 

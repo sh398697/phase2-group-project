@@ -11,7 +11,7 @@ function BookCard({book, removeBookFromState, currentUser, checkOutBook}) {
       .then(() => removeBookFromState(id)      )
   }
 
-  function handleCheckOutClick(e) {
+  function handleCheckOutClick() {
     //Update book to owner=currentUser
     checkOutBook(book);
   }
@@ -25,12 +25,7 @@ function BookCard({book, removeBookFromState, currentUser, checkOutBook}) {
           <img src={book.image} alt={book.title} width="300px" />
           <div>{book.review}</div>
           <button type="button" onClick={()=>handleDelete(book.id)} >Remove Book</button>
-
-          { book.owner ? (
-            <div>Checked out to: {book.owner}</div>
-          ) : (
-            <button onClick={handleCheckOutClick}>Check Me Out</button>
-          )}
+          { book.owner ? (<div>Checked out to: {book.owner}</div>) : (<button onClick={handleCheckOutClick}>Check Me Out</button> )}
           <p></p>
       </div>
     );
