@@ -17,9 +17,9 @@ function MyBooks({books, currentUser, returnBook}) {
 
     const bookList = myBooks.map(book => {
         return (
-            <div>
-                <div key={book.id}>{book.title}</div>
-                <button key={book.id} onClick={() => handleReturnBookClick(book)}>Return Book</button>
+            <div key={book.id}>
+                <div>{book.title}</div>
+                <button onClick={() => handleReturnBookClick(book)}>Return Book</button>
             </div>
         )
     })
