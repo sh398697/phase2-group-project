@@ -8,14 +8,21 @@ function Login({currentUser, setCurrentUser}) {
         setCurrentUser(e.target.value);
     }
 
+    function handleLogoutClick() {
+        setCurrentUser("");
+    }
+
     return (
     <div>
         <h1>Login:</h1>
-        <input type="text" name="username" placeholder="username" onChange={handleUserChange} ></input>
-        <div>
-            <span>Logged-In as: </span>
-            <span>{currentUser}</span>
-        </div>
+        
+        { currentUser ? (
+            <div>
+                <span>Logged-In as: </span>
+                <span>{currentUser}  </span>
+                <div><button onClick={handleLogoutClick}>Logout</button></div>
+            </div>) : 
+            (<input type="text" name="username" placeholder="username" onChange={handleUserChange}></input>)}
     </div>
   );
 }

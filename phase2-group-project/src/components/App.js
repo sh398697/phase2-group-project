@@ -62,7 +62,6 @@ function App() {
       setBooks(updatedBooks);
   }
 
-
   return (
     <div>       
       <Header />
