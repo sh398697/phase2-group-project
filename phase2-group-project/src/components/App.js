@@ -14,33 +14,37 @@ function App() {
   const [books, setBooks] = useState([])
   const [currentUser, setCurrentUser] = useState('')
 
-  const [updatedBook, setUpdatedBook] = useState([])
-
-
   function checkOutBook(book) {
 
-    setUpdatedBook( {
+    const updatedBook = {
         title: book.title,
         author: book.author,
         genre: book.genre,
         image: book.image,
         review: book.review,
         owner: currentUser
+    };
+
+    console.log(book);
+    console.log(updatedBook);
+
+    const updatedBooks = books.map(bookObj => {
+      if ((bookObj.id) === (book.id)) {
+        bookObj.owner = currentUser;
+        return bookObj;
+      } else {
+        return bookObj;
+      }
     });
 
-    console.log(book.title);
+    setBooks(updatedBooks);
 
      fetch(`http://localhost:6001/books/${book.id}`, {
-        method: 'PUT',
+        method: 'PATCH',
         headers: {
           'Content-type': 'application/json',
         },
         body: JSON.stringify({
-          title: book.title,
-          author: book.author,
-          genre: book.genre,
-          image: book.image,
-          review: book.review,
           owner: currentUser
       }),
       });
