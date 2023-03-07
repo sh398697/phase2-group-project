@@ -1,6 +1,4 @@
 import { useState, useEffect } from "react";
-import ReactDOM from 'react-dom/client';
-import { Route, Switch } from "react-router-dom";
 import NewBookForm from "./NewBookForm";
 import Search from "./Search";
 import BookList from "./BookList";
@@ -38,7 +36,7 @@ function HomePage({books, setBooks, currentUser, checkOutBook}) {
   }, [] )
 
   return (
-      <div className="homePage">
+      <div className="container mx-auto bg-gray-200 rounded-xl shadow border p-8 m-10">
         <NewBookForm currentUser={currentUser} addBookToState={ addBookToState }/>
         <Search changeSearchTerm={ changeSearchTerm } />
         <BookList books={searchedBooks} removeBookFromState={removeBookFromState} currentUser={currentUser} checkOutBook={checkOutBook} />

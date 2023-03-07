@@ -40,7 +40,7 @@ function NewBookForm({currentUser, addBookToState}) {
   }
   
   return (
-    <div className="new-book-form">
+    <div className="max-w-sm rounded overflow-hidden shadow-lg">
     <h2>New Book</h2>
     <form onSubmit={ handleSubmit } >
       <input onChange={ handleTitle } type="text" name="title" 

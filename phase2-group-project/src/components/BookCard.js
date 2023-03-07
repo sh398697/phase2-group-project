@@ -17,7 +17,7 @@ function BookCard({book, removeBookFromState, currentUser, checkOutBook}) {
   }
 
   return (
-      <div className="card">
+      <div className="border-solid">
           <div>Title: {book.title}</div>
           <div>Author: {book.author}</div>
           <div>Genre: {book.genre}</div>
