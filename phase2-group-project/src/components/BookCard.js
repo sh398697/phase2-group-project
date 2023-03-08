@@ -40,12 +40,12 @@ function BookCard({book, removeBookFromState, currentUser, checkOutBook, isMyBoo
 
           {(isMyBooks) ? (
             <div key={book.id}>
-                <button onClick={() => handleReturnBookClick(book)}>Return Book</button></div>) : (<div>
-                { {currentUser} === "admin" ? (<button type="button" onClick={()=>handleDelete(book.id)}>Remove Book</button>) : (null)} 
+                <button onClick={() => handleReturnBookClick(book)}>Return Book</button></div>) : (<div> 
                 { book.owner ? (<div>Checked out to: {book.owner}</div>) : (null)} 
                 { (isLoggedIn && !book.owner) ? (<button onClick={handleCheckOutClick}>Check Me Out</button>) : (null)}
                 { (!isLoggedIn && !book.owner) ? (<button><NavLink to="/login" exact>Login to Check Out</NavLink></button>) : (null)}
                 </div>)}
+              <div>{currentUser === "admin" ? (<button type="button" onClick={()=>handleDelete(book.id)}>Remove Book</button>) : (null)}</div>
       </div>
     );
 }
