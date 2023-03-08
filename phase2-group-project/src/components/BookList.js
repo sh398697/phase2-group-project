@@ -8,7 +8,11 @@ function BookList({books, removeBookFromState, currentUser, checkOutBook}) {
   } )
   
   return (
-      <div className="cards">{bookCardsArray}</div>
+    <section className="mb-20">
+      <div className="container mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-4 lg:gap-4">{bookCardsArray}</div>
+      </div>
+    </section>
     );
 }
 

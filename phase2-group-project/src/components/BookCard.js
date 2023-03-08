@@ -17,18 +17,23 @@ function BookCard({book, removeBookFromState, currentUser, checkOutBook}) {
   }
 
   return (
-      <div className="border-solid">
-          <div>Title: {book.title}</div>
-          <div>Author: {book.author}</div>
-          <div>Genre: {book.genre}</div>
-          <div>Published: {book.year}</div>
-          <img src={book.image} alt={book.title} width="300px" />
-          <div>{book.review}</div>
+      <div className="bg-white shadow-1 p-5 rounded-lg rounded-tl-[70px]
+       w-full max-w-[200px] mx-auto cursor-pointer hover:shadow-2x1 transition">
+         <img className='mb-8 rounded-lg rounded-tl-[40px]'  src={book.image} alt={book.title}/>
+         <div className="mbflex gap-x-1 text-xsm">
+            <div className="">Title: {book.title}</div>
+            <div className="">Author: {book.author}</div>
+            <div className="">Genre: {book.genre}</div>
+            <div className="">Published: {book.year}</div>
+            <div className="font-bold text-2l px-2 pt-4">{book.review}</div>
+          </div>
           <button type="button" onClick={()=>handleDelete(book.id)} >Remove Book</button>
           { book.owner ? (<div>Checked out to: {book.owner}</div>) : (<button onClick={handleCheckOutClick}>Check Me Out</button> )}
-          <p></p>
       </div>
     );
 }
 
 export default BookCard;
+
+
+// max-w-[500px] mx-auto p-4 py-12 grid md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-14

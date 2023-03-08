@@ -26,7 +26,7 @@
       "genre": "Mystery",
       "year": "2005",
       "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1324373974i/338691.jpg",
-      "review": "It's good!",
+      "review": "Awesome book with great plotting",
       "owner": "",
       "id": 3
     },
@@ -37,18 +37,152 @@
       "year": "2013",
       "image": "https://m.media-amazon.com/images/I/51ZwRHcGZkL._SX331_BO1,204,203,200_.jpg",
       "review": "Another great entry in the Inspector Gamache series!",
-      "owner": "",
+      "owner": "Scott",
       "id": 4
     },
     {
-      "title": "How the Light Gets In",
-      "author": "Louise Penny",
+      "id": 5,
+      "title": "The Silent Patient",
+      "author": "Alex Michaelides",
       "genre": "Mystery",
-      "year": "2013",
-      "image": "https://m.media-amazon.com/images/I/51ZwRHcGZkL._SX331_BO1,204,203,200_.jpg",
-      "review": "Another great entry in the Inspector Gamache series!",
-      "owner": "Scott",
-      "id": 5
-    }
+      "year": "2019",
+      "image": "https://m.media-amazon.com/images/I/41j1-YNROeL._SY344_BO1,204,203,200_.jpg",
+      "review": "A gripping psychological thriller!"
+    },
+    {
+      "id": 6,
+      "title": "The Girl with the Dragon Tattoo",
+      "author": "Stieg Larsson",
+      "genre": "Mystery",
+      "year": "2005",
+      "image": "https://m.media-amazon.com/images/I/518UXjrLGGL.jpg",
+      "review": "A dark and intense thriller with unforgettable characters."
+    },
+    {
+      "id": 7,
+      "title": "The Da Vinci Code",
+      "author": "Dan Brown",
+      "genre": "Mystery",
+      "year": "2003",
+      "image": "https://m.media-amazon.com/images/I/61E6AnxwAFL.jpg",
+      "review": "A fast-paced and engaging thriller that will keep you guessing until the very end."
+    },
+    {
+      "id": 8,
+      "title": "Gone Girl",
+      "author": "Gillian Flynn",
+      "genre": "Mystery",
+      "year": "2012",
+      "image": "https://m.media-amazon.com/images/I/41x6HtLdEhL.jpg",
+      "review": "A masterfully crafted psychological thriller that will leave you breathless."
+    },
+    {
+      "id": 9,
+      "title": "The Hound of the Baskervilles",
+      "author": "Arthur Conan Doyle",
+      "genre": "Mystery",
+      "year": "1902",
+      "image": "https://m.media-amazon.com/images/I/61sXi3zPYfL.jpg",
+      "review": "A classic mystery novel that has stood the test of time."
+    },
+    {
+      "id": 10,
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "genre": "Adventure",
+      "year": "1937",
+      "image": "https://m.media-amazon.com/images/I/51+Hqnuf-YL.jpg",
+      "review": "A timeless classic that will take you on an unforgettable adventure through Middle-earth."
+      },
+      {
+      "id": 11,
+      "title": "The Count of Monte Cristo",
+      "author": "Alexandre Dumas",
+      "genre": "Adventure",
+      "year": "1844",
+      "image": "https://m.media-amazon.com/images/I/91NSfYDaNqL._AC_UY436_FMwebp_QL65_.jpg",
+      "review": "An epic tale of revenge and adventure that will keep you on the edge of your seat."
+      },
+      {
+      "id": 12,
+      "title": "Treasure Island",
+      "author": "Robert Louis Stevenson",
+      "genre": "Adventure",
+      "year": "1883",
+      "image": "https://m.media-amazon.com/images/I/615d-iP33uL._AC_UL640_FMwebp_QL65_.jpg",
+      "review": "A classic adventure story about pirates, treasure, and a young boy's journey to find his way in the world."
+      },
+      {
+      "id": 13,
+      "title": "The Adventures of Tom Sawyer",
+      "author": "Mark Twain",
+      "genre": "Adventure",
+      "year": "1876",
+      "image": "https://m.media-amazon.com/images/I/71hyqnYZE+L._AC_UL640_FMwebp_QL65_.jpg",
+      "review": "A heartwarming and humorous adventure story that will take you back to your childhood."
+      },
+      {
+      "id": 14,
+      "title": "The Call of the Wild",
+      "author": "Jack London",
+      "genre": "Adventure",
+      "year": "1903",
+      "image": "https://m.media-amazon.com/images/I/61EWclqmmfL._AC_UY436_FMwebp_QL65_.jpg",
+      "review": "An exhilarating adventure story about a dog's struggle for survival in the wilderness."
+      },
+      {
+        "id": 15,
+        "title": "Journey to the Center of the Earth",
+        "author": "Jules Verne",
+        "genre": "Adventure",
+        "year": "1864",
+        "image": "https://m.media-amazon.com/images/I/61LTnK+Ch3L._AC_UY436_FMwebp_QL65_.jpg",
+        "review": "A classic adventure story that takes readers on an incredible journey to the center of the earth."
+      },
+      {
+        "id": 16,
+        "title": "Robinson Crusoe",
+        "author": "Daniel Defoe",
+        "genre": "Adventure",
+        "year": "1719",
+        "image": "https://m.media-amazon.com/images/I/71+Bcjjs1aL._AC_UY436_FMwebp_QL65_.jpg",
+        "review": "A timeless classic about a man's struggle for survival on a deserted island."
+      },
+      {
+        "id": 17,
+        "title": "The Swiss Family Robinson",
+        "author": "Johann David Wyss",
+        "genre": "Adventure",
+        "year": "1812",
+        "image": "https://m.media-amazon.com/images/I/91+Hiz7-BJL._AC_UY436_FMwebp_QL65_.jpg",
+        "review": "An exciting adventure story about a family's struggle for survival on a deserted island."
+      },
+      {
+        "id": 18,
+        "title": "Around the World in Eighty Days",
+        "author": "Jules Verne",
+        "genre": "Adventure",
+        "year": "1873",
+        "image": "https://m.media-amazon.com/images/I/61QnzNzI9fS._AC_UY436_FMwebp_QL65_.jpg",
+        "review": "An exhilarating adventure story about a man's attempt to travel around the world in 80 days."
+        },
+        {
+        "id": 19,
+        "title": "The Adventures of Huckleberry Finn",
+        "author": "Mark Twain",
+        "genre": "Adventure",
+        "year": "1884",
+        "image": "https://m.media-amazon.com/images/I/91yLxd90MiL._AC_UL640_FMwebp_QL65_.jpg",
+        "review": "A classic adventure story about a boy's journey down the Mississippi River with a runaway slave."
+        },
+        {
+        "id": 20,
+        "title": "The Three Musketeers",
+        "author": "Alexandre Dumas",
+        "genre": "Adventure",
+        "year": "1844",
+        "image": "https://m.media-amazon.com/images/I/61hKAV0gmcL._AC_UY436_FMwebp_QL65_.jpg",
+        "review": "An exciting adventure story about three musketeers and their heroic exploits."
+        }
   ]
 }
