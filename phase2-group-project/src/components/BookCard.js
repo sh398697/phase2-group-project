@@ -1,6 +1,6 @@
 import React from "react";
 
-function BookCard({book, removeBookFromState, currentUser, checkOutBook}) {
+function BookCard({book, removeBookFromState, currentUser, checkOutBook,}) {
 
   function handleDelete(id) {
     fetch(`http://localhost:6001/books/${id}`, {
@@ -32,7 +32,7 @@ function BookCard({book, removeBookFromState, currentUser, checkOutBook}) {
           <button type="button" onClick={()=>handleDelete(book.id)}>Remove Book</button>
           { book.owner ? (<div>Checked out to: {book.owner}</div>) : (null)}
           { (isLoggedIn && !book.owner) ? (<button onClick={handleCheckOutClick}>Check Me Out</button>) : (null)}
-          { (!isLoggedIn && !book.owner) ? (<div>Login to Check Out</div>) : (null)}
+          { (!isLoggedIn && !book.owner) ? (<button>Login to CheckOut</button>) : (null)}
       </div>
     );
 }

@@ -43,4 +43,3 @@ function HomePage({books, setBooks, currentUser, checkOutBook}) {
 
 export default HomePage;
 
-{/* <NewBookForm currentUser={currentUser} addBookToState={ addBookToState }/> */}
