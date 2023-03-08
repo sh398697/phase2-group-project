@@ -29,8 +29,8 @@ function BookCard({book, removeBookFromState, currentUser, checkOutBook}) {
             <div className="">Published: {book.year}</div>
             <div className="font-bold text-2l px-2 pt-4">{book.review}</div>
           </div>
-          <button type="button" onClick={()=>handleDelete(book.id)}>Remove Book</button>
-          { book.owner ? (<div>Checked out to: {book.owner}</div>) : (null)}
+          {(currentUser === "admin")? (<button type="button" onClick={()=>handleDelete(book.id)}>Remove Book</button>) : (null)} 
+          { book.owner ? (<div>Checked out to: {book.owner}</div>) : (null)} 
           { (isLoggedIn && !book.owner) ? (<button onClick={handleCheckOutClick}>Check Me Out</button>) : (null)}
           { (!isLoggedIn && !book.owner) ? (<div>Login to Check Out</div>) : (null)}
       </div>
