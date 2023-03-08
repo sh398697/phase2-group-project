@@ -7,7 +7,7 @@
       "year": "2007",
       "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1562761513i/2459785.jpg",
       "review": "Great debut novel!",
-      "owner": "",
+      "owner": "Scott",
       "id": 1
     },
     {
@@ -171,16 +171,6 @@
       "owner": ""
     },
     {
-      "id": 18,
-      "title": "Around the World in Eighty Days",
-      "author": "Jules Verne",
-      "genre": "Adventure",
-      "year": "1873",
-      "image": "https://m.media-amazon.com/images/I/61QnzNzI9fS._AC_UY436_FMwebp_QL65_.jpg",
-      "review": "An exhilarating adventure story about a man's attempt to travel around the world in 80 days.",
-      "owner": ""
-    },
-    {
       "id": 19,
       "title": "The Adventures of Huckleberry Finn",
       "author": "Mark Twain",
@@ -199,6 +189,16 @@
       "image": "https://m.media-amazon.com/images/I/61hKAV0gmcL._AC_UY436_FMwebp_QL65_.jpg",
       "review": "An exciting adventure story about three musketeers and their heroic exploits.",
       "owner": ""
+    },
+    {
+      "title": "The Escape Artist: The Man Who Broke Out of Auschwitz to Warn the World",
+      "author": "Jonathan Freedland",
+      "genre": "History",
+      "year": "2022",
+      "image": "https://m.media-amazon.com/images/I/51xTOlfHVNL._SX329_BO1,204,203,200_.jpg",
+      "review": "A complex hero. A forgotten story. ",
+      "owner": "",
+      "id": 22
     }
   ]
 }

@@ -1,15 +1,11 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { Route, Switch } from "react-router-dom";
-import NewBookForm from "./NewBookForm";
 import Search from "./Search";
 import BookList from "./BookList";
 
 function HomePage({books, setBooks, currentUser, checkOutBook}) {
 
-  const addBookToState = bookObj => {
-    setBooks( [ ...books, bookObj ] )
-  }
 
   function removeBookFromState(bookID) {
     
@@ -40,10 +36,11 @@ function HomePage({books, setBooks, currentUser, checkOutBook}) {
   return (
       <div className="container mx-auto bg-gray-200 rounded-xl shadow border p-8 m-10">
         <Search changeSearchTerm={ changeSearchTerm } />
-        <NewBookForm currentUser={currentUser} addBookToState={ addBookToState }/>
         <BookList books={searchedBooks} removeBookFromState={removeBookFromState} currentUser={currentUser} checkOutBook={checkOutBook} />
       </div>
     );
 }
 
 export default HomePage;
+
+{/* <NewBookForm currentUser={currentUser} addBookToState={ addBookToState }/> */}

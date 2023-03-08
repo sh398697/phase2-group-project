@@ -6,11 +6,16 @@ import Login from "./Login";
 import MyBooks from "./MyBooks";
 import HomePage from "./HomePage";
 import About from "./About";
+import NewBookForm from "./NewBookForm";
 
 function App() {
   
   const [books, setBooks] = useState([])
   const [currentUser, setCurrentUser] = useState('')
+
+  const addBookToState = bookObj => {
+    setBooks( [ ...books, bookObj ] )
+  }
 
   function checkOutBook(book) {
 
@@ -69,6 +74,9 @@ function App() {
         </Route>
           <Route exact path="/mybooks">
         <MyBooks books={books} currentUser={currentUser} returnBook={returnBook} />
+        </Route>
+        <Route exact path="/newbook">
+          <NewBookForm currentUser={currentUser} addBookToState={addBookToState}/>
         </Route>
         <Route exact path="/about">
           <About />
