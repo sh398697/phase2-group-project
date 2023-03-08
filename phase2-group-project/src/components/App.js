@@ -1,13 +1,10 @@
 import React from "react";
 import { useState } from "react";
-import ReactDOM from 'react-dom/client';
 import { Route, Switch } from "react-router-dom";
 import Header from "./Header";
 import Login from "./Login";
 import MyBooks from "./MyBooks";
 import HomePage from "./HomePage";
-import '../App.css';
-import Search from "./Search";
 import About from "./About";
 
 function App() {

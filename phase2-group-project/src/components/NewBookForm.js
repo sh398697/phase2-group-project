@@ -41,20 +41,29 @@ function NewBookForm({currentUser, addBookToState}) {
   }
   
   return (
-    <div className="new-book-form">
-    <h2>New Book</h2>
+    <div className="flex justify-between px-5 py-5 max-w-sm rounded overflow-hidden shadow-lg">
+    <h2 className="font-bold">New Book</h2>
     <form onSubmit={ handleSubmit } >
-      <input onChange={ handleTitle } type="text" name="title" 
+      <input className="px-2 py-1 font-semibold placeholder-gray-500 text-black rounded-2xl
+        border-none ring-2 ring-gray-300
+        focus:ring-gray-500 focus:ring-2"onChange={ handleTitle } type="text" name="title" 
         placeholder="Book title..." />
-        <input onChange={ handleAuthor } type="text" name="author" 
+        <input className="px-2 py-1 font-semibold placeholder-gray-500 text-black rounded-2xl
+        border-none ring-2 ring-gray-300
+        focus:ring-gray-500 focus:ring-2"onChange={ handleAuthor } type="text" name="author" 
         placeholder="Author name..." />
-        <input onChange={ handleGenre } type="text" name="genre" 
+        <input className="px-2 py-1 font-semibold placeholder-gray-500 text-black rounded-2xl
+        border-none ring-2 ring-gray-300 focus:ring-gray-500 
+        focus:ring-2"onChange={ handleGenre } type="text" name="genre" 
         placeholder="Genre..." />
-        <input onChange={ handleYear } type="text" name="year" 
+        <input className="px-2 py-1 font-semibold placeholder-gray-500 text-black rounded-2xl
+        border-none ring-2 ring-gray-300 focus:ring-gray-500 focus:ring-2"onChange={ handleYear } type="text" name="year" 
         placeholder="Year published..." />
-        <input onChange={ handleImage } type="text" name="image"
+        <input className="px-2 py-1 font-semibold placeholder-gray-500 text-black rounded-2xl
+        border-none ring-2 ring-gray-300 focus:ring-gray-500 focus:ring-2"onChange={ handleImage } type="text" name="image"
         placeholder="Image URL..." />
-        <input onChange={ handleReview } type="text" name="review" 
+        <input className="px-2 py-1 font-semibold placeholder-gray-500 text-black rounded-2xl
+        border-none ring-2 ring-gray-300 focus:ring-gray-500 focus:ring-2" onChange={ handleReview } type="text" name="review" 
         placeholder="Your review..." />
       <button type="submit">Add Book</button>
     </form>

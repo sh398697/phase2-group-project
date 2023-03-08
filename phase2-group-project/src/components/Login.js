@@ -1,7 +1,4 @@
 import React from "react";
-import ReactDOM from 'react-dom/client';
-import { Route } from "react-router-dom";
-import {useNavigate} from "react-router-dom";
 
 function Login({currentUser, setCurrentUser}) {
     
@@ -12,8 +9,6 @@ function Login({currentUser, setCurrentUser}) {
     function handleLoginClick(e) {
         setCurrentUser(e.target.username.value);
     }   
-
-    
 
 
     return (

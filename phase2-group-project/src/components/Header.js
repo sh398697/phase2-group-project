@@ -1,21 +1,19 @@
 import React from "react";
-import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Route, NavLink, Switch } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Header() {
 
 
   return (
-    <div>
-          <h1>Flatiron Book Finder  
-            <NavLink 
-            to="/login" exact><button>Log In</button>
-            </NavLink>
-          </h1>
-      <NavLink to="/" exact>Home</NavLink>
-      <NavLink to="/mybooks" exact>My Books</NavLink>
-      <NavLink to="/about" exact>About Us</NavLink>
-    </div>
+  <div className="">
+    <h1 className="w-full text-5xl font-mono font-medium bg-red-700 text-center">Flation Library</h1>
+     <ul className="uppercase font-semibold">
+      <li className='p-4 border-b border-gray-400'> <NavLink to="/" exact>Home</NavLink></li>
+      <li className='p-4 border-b border-gray-400'> <NavLink to="/login" exact>Login</NavLink></li>
+      <li className='p-4 border-b border-gray-400'> <NavLink to="/mybooks" exact>My Books</NavLink></li>
+      <li className='p-4 border-b border-gray-400'> <NavLink to="/about" exact>About Us</NavLink></li>
+    </ul>
+  </div>
   );
 }
 

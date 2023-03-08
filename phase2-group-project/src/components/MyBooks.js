@@ -18,7 +18,7 @@ function MyBooks({books, currentUser, returnBook}) {
     const bookList = myBooks.map(book => {
         return (
             <div key={book.id}>
-                <div>{book.title}</div>
+                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">{book.title}</span>
                 <button onClick={() => handleReturnBookClick(book)}>Return Book</button>
             </div>
         )
