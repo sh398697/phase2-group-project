@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from 'react-dom/client';
 import { Route } from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 
 function Login({currentUser, setCurrentUser}) {
     
@@ -10,7 +11,10 @@ function Login({currentUser, setCurrentUser}) {
 
     function handleLoginClick(e) {
         setCurrentUser(e.target.username.value);
-    }
+    }   
+
+    
+
 
     return (
     <div>
@@ -20,7 +24,9 @@ function Login({currentUser, setCurrentUser}) {
             <div>
                 <span>Logged-In as: </span>
                 <span>{currentUser}  </span>
-                <div><button onClick={handleLogoutClick}>Logout</button></div>
+                <div>
+                    <button onClick={handleLogoutClick}>Logout</button>
+                </div>
             </div>) : 
             (
             <form onSubmit={handleLoginClick}>
