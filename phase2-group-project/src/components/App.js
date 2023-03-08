@@ -71,7 +71,7 @@ function App() {
 
   return (
     <div>       
-      <Header />
+      <Header currentUser={currentUser}/>
       <Switch>
         <Route exact path="/login">
           <Login currentUser={currentUser} setCurrentUser={setCurrentUser}/>
