@@ -16,6 +16,8 @@ function BookCard({book, removeBookFromState, currentUser, checkOutBook}) {
     checkOutBook(book);
   }
 
+  const isLoggedIn = currentUser;
+
   return (
       <div className="bg-white shadow-1 p-5 rounded-lg rounded-tl-[70px]
        w-full max-w-[200px] mx-auto cursor-pointer hover:shadow-2x1 transition">
@@ -27,8 +29,10 @@ function BookCard({book, removeBookFromState, currentUser, checkOutBook}) {
             <div className="">Published: {book.year}</div>
             <div className="font-bold text-2l px-2 pt-4">{book.review}</div>
           </div>
-          <button type="button" onClick={()=>handleDelete(book.id)} >Remove Book</button>
-          { book.owner ? (<div>Checked out to: {book.owner}</div>) : (<button onClick={handleCheckOutClick}>Check Me Out</button> )}
+          <button type="button" onClick={()=>handleDelete(book.id)}>Remove Book</button>
+          { book.owner ? (<div>Checked out to: {book.owner}</div>) : (null)}
+          { (isLoggedIn && !book.owner) ? (<button onClick={handleCheckOutClick}>Check Me Out</button>) : (null)}
+          { (!isLoggedIn && !book.owner) ? (<div>Login to Check Out</div>) : (null)}
       </div>
     );
 }
