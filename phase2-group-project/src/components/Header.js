@@ -1,13 +1,14 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
+
 function Header({currentUser}) {
 
   return (
   <div className="">
     <div>
-      <span><h1 className="w-full text-5xl font-mono font-medium bg-red-700 text-center">Flation Library</h1></span>
-      {((currentUser === "") ? (<span className="float-right"></span>) : (<span className="float-right">Welcome, {currentUser}</span>))}
+      <span><h1 className="w-full text-5xl font-mono font-medium bg-red-800 text-center">Flation Library</h1></span>
+      {((currentUser === "") ? (<span className="float-right"></span>) : (<span className="float-right font-bold mx-7">Welcome, {currentUser}</span>))}
     </div>
      <ul className="uppercase font-semibold">
       <li className='p-4 border-b border-gray-400'> <NavLink to="/" exact>Home</NavLink></li>

@@ -30,7 +30,7 @@ function BookCard({book, removeBookFromState, currentUser, checkOutBook, isMyBoo
 
   return (
       <div className="bg-white p-4 rounded-lg rounded-tl-[70px]
-       w-full max-w-[240px] mx-auto cursor-pointer hover:shadow-8x1 transition">
+       w-full max-w-[240px] mx-auto cursor-pointer hover:scale-105 duration-200">
         { detailToggle ? (null) : <img className='mb-8 rounded-lg rounded-tl-[40px]'  src={book.image} alt={book.title} onClick={bookDetailToggle}/>}     
          <div className="mbflex gap-x-1 text-xsm">
             { detailToggle ? (<div className=" p-4 rounded-lg rounded-tl-[70px]
@@ -40,9 +40,7 @@ function BookCard({book, removeBookFromState, currentUser, checkOutBook, isMyBoo
 
           {(isMyBooks) ? (
             <div key={book.id}>
-                <button onClick={() => handleReturnBookClick(book)}>Return Book</button>
-            </div>
-            ) : (<div>
+                <button onClick={() => handleReturnBookClick(book)}>Return Book</button></div>) : (<div>
                 { {currentUser} === "admin" ? (<button type="button" onClick={()=>handleDelete(book.id)}>Remove Book</button>) : (null)} 
                 { book.owner ? (<div>Checked out to: {book.owner}</div>) : (null)} 
                 { (isLoggedIn && !book.owner) ? (<button onClick={handleCheckOutClick}>Check Me Out</button>) : (null)}

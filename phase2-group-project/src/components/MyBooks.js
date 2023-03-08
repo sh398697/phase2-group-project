@@ -29,8 +29,8 @@ function MyBooks({books, currentUser, returnBook, removeBookFromState, checkOutB
     }
 
     return (
-    <div>
-        <h1>My Books</h1>
+    <div className="flex justify-center container mx-auto bg-gray-200 rounded-xl border p-8 m-10">
+        <h1 className="font-bold">My Books</h1>
         { (myBooks) ? (
             <div>
                 <div>Your checked out books:</div>

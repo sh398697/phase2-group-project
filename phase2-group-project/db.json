@@ -17,7 +17,7 @@
       "year": "2008",
       "image": "https://m.media-amazon.com/images/I/51iUsYh6HaL._SL350_.jpg",
       "review": "Even better than the first book!",
-      "owner": "Scott",
+      "owner": "",
       "id": 2
     },
     {
@@ -27,7 +27,7 @@
       "year": "2005",
       "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1324373974i/338691.jpg",
       "review": "Awesome book with great plotting",
-      "owner": "Scott",
+      "owner": "",
       "id": 3
     },
     {
@@ -48,7 +48,7 @@
       "year": "2019",
       "image": "https://m.media-amazon.com/images/I/41j1-YNROeL._SY344_BO1,204,203,200_.jpg",
       "review": "A gripping psychological thriller!",
-      "owner": "Scott"
+      "owner": ""
     },
     {
       "id": 6,
@@ -68,7 +68,7 @@
       "year": "2003",
       "image": "https://m.media-amazon.com/images/I/513jDWxi4nL._SY344_BO1,204,203,200_.jpg",
       "review": "A fast-paced and engaging thriller that will keep you guessing until the very end.",
-      "owner": "Daniele"
+      "owner": ""
     },
     {
       "id": 8,
@@ -148,7 +148,7 @@
       "year": "1864",
       "image": "https://m.media-amazon.com/images/I/61LTnK+Ch3L._AC_UY436_FMwebp_QL65_.jpg",
       "review": "A classic adventure story that takes readers on an incredible journey to the center of the earth.",
-      "owner": "Daniele"
+      "owner": ""
     },
     {
       "id": 16,
