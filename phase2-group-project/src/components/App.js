@@ -17,6 +17,7 @@ function App() {
     setBooks( [ ...books, bookObj ] )
   }
 
+
   function checkOutBook(book) {
 
     const updatedBooks = books.map(bookObj => {

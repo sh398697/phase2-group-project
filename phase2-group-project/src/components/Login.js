@@ -12,8 +12,8 @@ function Login({currentUser, setCurrentUser}) {
 
 
     return (
-    <div>
-        <h1>Login:</h1>
+    <div className="mx-auto my-10 bg-gray-200 px-10 py-10 max-w-sm rounded shadow-lg">
+        <h1 className="font-bold">Login:</h1>
         
         { currentUser ? (
             <div>
