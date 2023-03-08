@@ -1,19 +1,14 @@
 import React from "react";
 
 function MyBooks({books, currentUser, returnBook}) {
-  
+    
     const myBooks = books.filter(book => {
-        if (book.owner === currentUser && currentUser != "") {
+        if (book.owner === currentUser && currentUser !== "") {
             return book;
         } else {
             return false;
         }
     })
-
-    function handleReturnBookClick(book) {
-        console.log(book);
-        returnBook(book);
-    }
 
     const bookList = myBooks.map(book => {
         return (
@@ -24,12 +19,15 @@ function MyBooks({books, currentUser, returnBook}) {
         )
     })
 
+    function handleReturnBookClick(book) {
+        returnBook(book);
+    }
+
 
     return (
     <div>
         <h1>My Books</h1>
-        
-        { (myBooks.length > 0) ? (
+        { (myBooks) ? (
             <div>
                 <div>Your checked out books:</div>
                 <div>{bookList}</div>

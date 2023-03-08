@@ -45,7 +45,10 @@ function App() {
   function returnBook(book) {
     
     const updatedBooks = books.map(bookObj => {
-      if ((bookObj.owner) === (currentUser)) {
+      if ((bookObj.owner === currentUser) && (currentUser !== "") && (bookObj.id === book.id)) {
+        console.log('Changing the owner in upDatedBooks');
+        console.log(bookObj.owner);
+        console.log(currentUser);
         bookObj.owner = "";
         return bookObj;
       } else {
@@ -74,7 +77,7 @@ function App() {
           <Login currentUser={currentUser} setCurrentUser={setCurrentUser}/>
         </Route>
           <Route exact path="/mybooks">
-        <MyBooks books={books} currentUser={currentUser} returnBook={returnBook} />
+        <MyBooks books={books} setBooks={setBooks} currentUser={currentUser} returnBook={returnBook}/>
         </Route>
         <Route exact path="/newbook">
           <NewBookForm currentUser={currentUser} addBookToState={addBookToState}/>
