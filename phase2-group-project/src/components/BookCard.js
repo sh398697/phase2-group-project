@@ -1,5 +1,5 @@
 import React from "react";
-
+import { NavLink } from "react-router-dom";
 function BookCard({book, removeBookFromState, currentUser, checkOutBook,}) {
 
   function handleDelete(id) {
@@ -32,7 +32,7 @@ function BookCard({book, removeBookFromState, currentUser, checkOutBook,}) {
           {(currentUser === "admin")? (<button type="button" onClick={()=>handleDelete(book.id)}>Remove Book</button>) : (null)} 
           { book.owner ? (<div>Checked out to: {book.owner}</div>) : (null)} 
           { (isLoggedIn && !book.owner) ? (<button onClick={handleCheckOutClick}>Check Me Out</button>) : (null)}
-          { (!isLoggedIn && !book.owner) ? (<button>Login to CheckOut</button>) : (null)}
+          { (!isLoggedIn && !book.owner) ? (<button><NavLink to="/login" exact>Login to CheckOut</NavLink></button>) : (null)}
       </div>
     );
 }
