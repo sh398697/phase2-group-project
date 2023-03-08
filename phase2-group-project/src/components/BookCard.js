@@ -3,7 +3,7 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 
-function BookCard({book, removeBookFromState, currentUser, checkOutBook,}) {
+function BookCard({book, removeBookFromState, currentUser, checkOutBook, isMyBooks, handleReturnBookClick}) {
 
   const [detailToggle, setDetailToggle] = useState(false)
 
@@ -26,7 +26,6 @@ function BookCard({book, removeBookFromState, currentUser, checkOutBook,}) {
     checkOutBook(book);
   }
 
-
   const isLoggedIn = currentUser;
 
   return (
@@ -38,10 +37,17 @@ function BookCard({book, removeBookFromState, currentUser, checkOutBook,}) {
             w-full max-w-[240px] mx-auto cursor-pointer">Title:{book.title} <div>Author: {book.author}</div> <div>Genre: {book.genre}</div> 
             <div>Published: {book.year}</div> <div className="font-bold text-2l px-2 pt-4">{book.review}</div> </div>) : null}
           </div>
-          {(currentUser === "admin")? (<button type="button" onClick={()=>handleDelete(book.id)}>Remove Book</button>) : (null)} 
-          { book.owner ? (<div>Checked out to: {book.owner}</div>) : (null)} 
-          { (isLoggedIn && !book.owner) ? (<button onClick={handleCheckOutClick}>Check Me Out</button>) : (null)}
-          { (!isLoggedIn && !book.owner) ? (<button><NavLink to="/login" exact>Login to Check Out</NavLink></button>) : (null)}
+
+          {(isMyBooks) ? (
+            <div key={book.id}>
+                <button onClick={() => handleReturnBookClick(book)}>Return Book</button>
+            </div>
+            ) : (<div>
+                { {currentUser} === "admin" ? (<button type="button" onClick={()=>handleDelete(book.id)}>Remove Book</button>) : (null)} 
+                { book.owner ? (<div>Checked out to: {book.owner}</div>) : (null)} 
+                { (isLoggedIn && !book.owner) ? (<button onClick={handleCheckOutClick}>Check Me Out</button>) : (null)}
+                { (!isLoggedIn && !book.owner) ? (<button><NavLink to="/login" exact>Login to Check Out</NavLink></button>) : (null)}
+                </div>)}
       </div>
     );
 }
