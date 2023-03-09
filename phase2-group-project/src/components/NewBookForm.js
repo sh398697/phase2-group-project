@@ -27,7 +27,7 @@ function NewBookForm({currentUser, addBookToState}) {
       year: newYear,
       image: newImage,
       review: newReview,
-      owner: currentUser
+      owner: ""
     }
 
     fetch( 'http://localhost:6001/books', {

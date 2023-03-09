@@ -18,7 +18,7 @@ function Login({currentUser, setCurrentUser}) {
         { currentUser ? (
             <div>
                 <span className="px-2 py-1">Logged-In as: </span>
-                <span className="px-2 py-1">{currentUser}  </span>
+                <span>{currentUser}</span>
                 <div>
                     <button onClick={handleLogoutClick}>Logout</button>
                 </div>
