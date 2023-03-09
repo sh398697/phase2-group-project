@@ -14,7 +14,7 @@ function Header({currentUser}) {
           <NavLink to="/" exact className="flex-initial w-48"><li>Home</li></NavLink>
           <NavLink to="/login" exact className="flex-initial w-48"><li>My Account</li></NavLink>
           <NavLink to="/mybooks" exact className="flex-initial w-48"><li>My Books</li></NavLink>
-          <NavLink to="/newbook" exact className="flex-initial w-48"><li>New Book Form</li></NavLink>
+          <NavLink to="/newbook" exact className="flex-initial w-48"><li>Add a Book</li></NavLink>
           <NavLink to="/about" exact className="flex-initial w-48"><li>About Us</li></NavLink>
        </ul>
       </div>
