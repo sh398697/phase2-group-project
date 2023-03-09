@@ -5,7 +5,7 @@
 @layer base {
 
     li {
-        @apply p-4 
+        @apply p-3 text-base w-80 transition duration-100 hover:scale-90 hover:bg-slate-400 flex justify-center items-center
     }
     button {
         @apply my-2 border hover:bg-slate-400 font-bold border-black rounded-xl px-5 py-1

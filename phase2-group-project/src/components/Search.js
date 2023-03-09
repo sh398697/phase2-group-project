@@ -5,7 +5,7 @@ function Search({ changeSearchTerm }) {
   const handleSearch = e => changeSearchTerm( e.target.value )
 
   return (
-    <div className="flex justify-end 
+    <div className="flex justify-start 
     py-2 px-6 bg-gray-30 border-b rounded-l">
       <h2 className="font-bold px-3 py-2">Search Books:</h2>
       <input
