@@ -19,13 +19,13 @@ function HomePage({books, setBooks, currentUser, checkOutBook}) {
 
   const changeSearchTerm = newString => setSearchTerm( newString.toLowerCase() )
 
-  const byTitle = bookObj => {
-    if( bookObj.title.toLowerCase().includes( searchTerm ) ) {
+  const byKeyword = bookObj => {
+    if(( bookObj.title.toLowerCase().includes( searchTerm ) ) || ( bookObj.author.toLowerCase().includes( searchTerm ) ) || ( bookObj.genre.toLowerCase().includes( searchTerm ) ) ) {
       return true
     }
   }
 
-  const searchedBooks = books.filter( byTitle )
+  const searchedBooks = books.filter( byKeyword )
 
   useEffect( () => {
     fetch( 'http://localhost:6001/books' )
