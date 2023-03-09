@@ -2,6 +2,11 @@
     box-sizing: border-box; /* Too much math below to be concerned with standard CSS Box Model element dimensions calculations. Let's not have to account for padding/margins/borders on anything here. */
   }
 
+  h1 {
+    text-align: center;
+  }
+
+
   .carousel_wrapper {
     position: relative;
     width: 320px;
