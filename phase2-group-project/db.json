@@ -199,6 +199,86 @@
       "review": "A complex hero. A forgotten story. ",
       "owner": "",
       "id": 21
+    },
+    {
+      "title": "Ishmael",
+      "author": "Daniel Quinn",
+      "genre": "Philisophy",
+      "year": "1992",
+      "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1529680413i/40611328.jpg",
+      "review": "A must-read!",
+      "owner": "",
+      "id": 22
+    },
+    {
+      "title": "Only the Strong Survive: The Odyssey of Allen Iverson",
+      "author": "Larry Platt",
+      "genre": "Biography, Sports",
+      "year": "2002",
+      "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1348732938i/268921.jpg",
+      "review": "AI is The Man",
+      "owner": "",
+      "id": 23
+    },
+    {
+      "title": "Five Against One",
+      "author": "Kim Neely",
+      "genre": "Music",
+      "year": "1998",
+      "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1348532632i/1243778.jpg",
+      "review": "Eddie!!!",
+      "owner": "",
+      "id": 24
+    },
+    {
+      "title": "Where Wizards Stay Up Late: The Origins of the Internet",
+      "author": "Katie Hafner",
+      "genre": "Technology",
+      "year": "1996",
+      "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1405259838i/281818.jpg",
+      "review": "Nerds.",
+      "owner": "",
+      "id": 25
+    },
+    {
+      "title": "The Idea Factory: Bell Labs and the Great Age of American Innovation",
+      "author": "Jon Gertner",
+      "genre": "Technology",
+      "year": "2012",
+      "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1338504885i/11797471.jpg",
+      "review": "Informative!",
+      "owner": "",
+      "id": 26
+    },
+    {
+      "title": "Cosmos",
+      "author": "Carl Sagan",
+      "genre": "Science",
+      "year": "1980",
+      "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1388620656i/55030.jpg",
+      "review": "A true classic!",
+      "owner": "",
+      "id": 27
+    },
+    {
+      "title": "A Walk in the Woods: Rediscovering America on the Appalachian Trail",
+      "author": "Bill Bryson",
+      "genre": "Nature",
+      "year": "1998",
+      "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1388189974i/9791.jpg",
+      "review": "A great read!",
+      "owner": "",
+      "id": 28
+    },
+    {
+      "title": "The Hidden Life of Trees",
+      "author": "Peter Wohlleben",
+      "genre": "Science, Nature",
+      "year": "2015",
+      "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1464281905i/28256439.jpg",
+      "review": "A revelation.",
+      "owner": "",
+      "id": 29
     }
   ]
 }
