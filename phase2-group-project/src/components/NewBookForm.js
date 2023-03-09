@@ -41,7 +41,7 @@ function NewBookForm({currentUser, addBookToState}) {
   }
   
   return (
-    <div className="mx-auto my-10 bg-gray-200 px-10 py-10 max-w-sm rounded shadow-lg">
+    <div className="justify-center container mx-auto bg-gray-200 rounded-xl border p-8 m-10">
       <h2 className="font-bold ">New Book</h2>
       <form onSubmit={ handleSubmit } >
       <input className="my-2 px-2 py-3 font-semibold placeholder-gray-500 text-black rounded-2xl
