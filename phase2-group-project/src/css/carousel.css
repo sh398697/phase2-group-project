@@ -15,7 +15,7 @@
     height: 100%;
     transform-style: preserve-3d;
     transform: rotateY(-360deg) translateZ(-412px); /* add reverse transformation from the slides */
-    animation: swirl 10s steps(10000, end) infinite; /* run `swirl` animation (defined at end of CSS) infitely, with animation lasting 40 seconds, and 10,000 steps between the FROM and TO values in the animation for a smooth rotation */
+    animation: swirl 8s steps(10000, end) infinite; /* run `swirl` animation (defined at end of CSS) infitely, with animation lasting 40 seconds, and 10,000 steps between the FROM and TO values in the animation for a smooth rotation */
   }
   
   .slide {
