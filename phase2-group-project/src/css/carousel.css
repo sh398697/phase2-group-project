@@ -44,9 +44,9 @@
   .slide img {
     width: 280px;
     height: 175px;
-    border: 3px inset rgba(29, 203, 84, 0.75);
+    border: 3px inset rgba(193, 211, 242, 0.75);
     /* border-radius: 100%; */
-    box-shadow: 0 0 15px 3px rgba(110, 72, 221, 0.9);
+    box-shadow: 0 0 15px 3px rgba(98, 167, 241, 0.9);
   }
   
   /*#sun {
