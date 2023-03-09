@@ -7,11 +7,8 @@ function Header({currentUser}) {
   return (
   <div className="w-screen h-[120px] z-10 bg-slate-600 justify-center items-center">
       <div className="justify-center items-center">
-        <NavLink to="/" exact><h1 className="text-3xl py-4 font-bold sm:text-4xl text-white mx-auto p-3">Flation Library</h1></NavLink>
-        
-        {/*}
-        {((currentUser === "") ? (<NavLink to="/login" exact><span className="float-right">Login</span></NavLink>) : (<span className="float-right font-bold mx-7">Welcome, {currentUser}</span>))}
-        */}
+        <div><h1 className="text-3xl py-4 font-bold sm:text-4xl text-white mx-auto p-3"><NavLink to="/" exact>Flation Library</NavLink></h1></div>
+        <div>{((currentUser === "") ? (<NavLink to="/login" exact><span className="text-white text-base pt-4 p-3"></span></NavLink>) : (<span className="text-white text-base pt-4 p-3">Welcome, {currentUser}</span>))}</div>
 
         <ul className="flex h-[120px] z-10 bg-slate-600 items-center justify-center mx-auto">
           <NavLink to="/" exact><li>Home</li></NavLink>
