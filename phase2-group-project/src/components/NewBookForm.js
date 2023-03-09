@@ -42,7 +42,7 @@ function NewBookForm({currentUser, addBookToState}) {
   
   return (
     <div className="container mx-auto bg-gray-200 rounded-xl border p-8 m-10">
-      <h1 className="text-2xl py-4">New Book</h1>
+      <h1 className="text-2xl py-4 font-bold">New Book</h1>
       <form onSubmit={ handleSubmit } >
       <div className="flex justify-center px-2 py-1"><input className="px-3 py-2 font-semibold placeholder-gray-500 text-black rounded-2xl
         border-none ring-2 ring-gray-300 focus:ring-gray-500 focus:ring-2"onChange={ handleTitle } type="text" name="title" 

@@ -21,14 +21,14 @@ function MyBooks({books, currentUser, returnBook, removeBookFromState, checkOutB
 
     return (
     <div className="justify-center container mx-auto bg-gray-200 rounded-xl border p-8 m-10">
-        <h1 className="text-2xl">My Books</h1>
+        <h1 className="text-2xl py-5 font-bold">My Books</h1>
         { (myBooks.length > 0) ? (
             <div>
-                <div className="px-2 py-1">Your checked out books:</div>
+                <div className="flex justify-center px-2 py-1">Your checked out books:</div>
                 <div className="grid px-2 py-1 md:grid-cols-3 lg:grid-cols-4 gap-4">{bookList}</div>
             </div>
           ) : (
-            <div className="px-2 py-1">You have no books checked out</div>
+            <div className="flex justify-center px-2 py-8">You have no books checked out</div>
           )}
     </div>
   );
