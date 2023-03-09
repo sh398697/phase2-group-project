@@ -17,7 +17,7 @@
       "year": "2008",
       "image": "https://m.media-amazon.com/images/I/51iUsYh6HaL._SL350_.jpg",
       "review": "Even better than the first book!",
-      "owner": "",
+      "owner": "Scott",
       "id": 2
     },
     {
@@ -48,7 +48,7 @@
       "year": "2019",
       "image": "https://m.media-amazon.com/images/I/41j1-YNROeL._SY344_BO1,204,203,200_.jpg",
       "review": "A gripping psychological thriller!",
-      "owner": ""
+      "owner": "Scott"
     },
     {
       "id": 6,
