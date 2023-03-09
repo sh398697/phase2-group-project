@@ -7,7 +7,7 @@
       "year": "2007",
       "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1562761513i/2459785.jpg",
       "review": "Great debut novel!",
-      "owner": "Scott",
+      "owner": "",
       "id": 1
     },
     {
@@ -17,7 +17,7 @@
       "year": "2008",
       "image": "https://m.media-amazon.com/images/I/51iUsYh6HaL._SL350_.jpg",
       "review": "Even better than the first book!",
-      "owner": "Scott",
+      "owner": "",
       "id": 2
     },
     {
@@ -25,7 +25,7 @@
       "author": "Louise Penny",
       "genre": "Mystery",
       "year": "2005",
-      "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1324373974i/338691.jpg",
+      "image": "https://m.media-amazon.com/images/I/81FiMxOzzaL._AC_UY436_FMwebp_QL65_.jpg",
       "review": "Awesome book with great plotting",
       "owner": "",
       "id": 3
@@ -37,7 +37,7 @@
       "year": "2013",
       "image": "https://m.media-amazon.com/images/I/51ZwRHcGZkL._SX331_BO1,204,203,200_.jpg",
       "review": "Another great entry in the Inspector Gamache series!",
-      "owner": "Scott",
+      "owner": "",
       "id": 4
     },
     {
@@ -78,7 +78,7 @@
       "year": "2012",
       "image": "https://m.media-amazon.com/images/I/410j20iNeAL._SX257_BO1,204,203,200_.jpg",
       "review": "A masterfully crafted psychological thriller that will leave you breathless.",
-      "owner": "Scott"
+      "owner": ""
     },
     {
       "id": 9,
@@ -116,7 +116,7 @@
       "author": "Robert Louis Stevenson",
       "genre": "Adventure",
       "year": "1883",
-      "image": "https://m.media-amazon.com/images/I/615d-iP33uL._AC_UL640_FMwebp_QL65_.jpg",
+      "image": "https://m.media-amazon.com/images/I/51biSyKel5L._SX331_BO1,204,203,200_.jpg",
       "review": "A classic adventure story about pirates, treasure, and a young boy's journey to find his way in the world.",
       "owner": ""
     },
@@ -128,7 +128,7 @@
       "year": "1876",
       "image": "https://m.media-amazon.com/images/I/71hyqnYZE+L._AC_UL640_FMwebp_QL65_.jpg",
       "review": "A heartwarming and humorous adventure story that will take you back to your childhood.",
-      "owner": ""
+      "owner": "Daniele"
     },
     {
       "id": 14,

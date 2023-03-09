@@ -30,8 +30,8 @@ function BookCard({book, removeBookFromState, currentUser, checkOutBook, isMyBoo
 
   return (
       <div className="bg-white p-4 rounded-lg rounded-tl-[70px]
-       w-full max-w-[240px] mx-auto cursor-pointer hover:scale-105 duration-200">
-        { detailToggle ? (null) : <img className='mb-8 rounded-lg rounded-tl-[40px]'  src={book.image} alt={book.title} onClick={bookDetailToggle}/>}     
+       w-full max-w-[240px] mx-auto my-2 cursor-pointer hover:scale-105 duration-200">
+        { detailToggle ? (null) : <img className='mx-auto max-w-[200px] max-h-[300px] rounded-lg rounded-tl-[50px]'  src={book.image} alt={book.title} onClick={bookDetailToggle}/>}     
          <div className="mbflex gap-x-1 text-xsm">
             { detailToggle ? (<div className=" p-4 rounded-lg rounded-tl-[70px]
             w-full max-w-[240px] mx-auto cursor-pointer" onClick={bookDetailToggle}>Title:{book.title} <div>Author: {book.author}</div> <div>Genre: {book.genre}</div> 
