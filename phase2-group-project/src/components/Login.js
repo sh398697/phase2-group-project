@@ -25,7 +25,8 @@ function Login({currentUser, setCurrentUser}) {
             </div>) : 
             (
             <form onSubmit={handleLoginClick}>
-                <input type="text" name="username" placeholder="username" id="username"></input>
+                <input type="text" name="username" placeholder="Enter username..." id="username" className="px-3 py-2 font-semibold placeholder-gray-500 text-black rounded-2xl
+        border-none ring-2 ring-gray-300 focus:ring-gray-500 focus:ring-2"></input>
                 <button type="submit">Login</button>
             </form>)}
     </div>
