@@ -5,7 +5,7 @@ import "https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.j
 function About() {
   return (
         <div className="justify-center container mx-auto bg-gray-200 rounded-xl border p-8 m-10 h-screen">
-          <h1 className="font-bold text-3xl">Hello!</h1>
+          <h1 className="text-2xl">Hello!</h1>
           <br></br>
           <p className="font-bold text-xl max-w-75%">Welcome to our library's webpage!</p>
           <br></br>

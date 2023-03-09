@@ -13,7 +13,7 @@ function Login({currentUser, setCurrentUser}) {
 
     return (
     <div className="justify-center container mx-auto bg-gray-200 rounded-xl border p-8 m-10">
-        <h1 className="font-bold text-2xl ">Login:</h1>
+        <h1 className="text-2xl ">Login:</h1>
         
         { currentUser ? (
             <div>
