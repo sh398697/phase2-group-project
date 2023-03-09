@@ -44,25 +44,25 @@ function NewBookForm({currentUser, addBookToState}) {
     <div className="justify-center container mx-auto bg-gray-200 rounded-xl border p-8 m-10">
       <h1 className="text-2xl">New Book</h1>
       <form onSubmit={ handleSubmit } >
-      <input className="px-3 py-2 font-semibold placeholder-gray-500 text-black rounded-2xl
+      <span className="px-2 py-2"><input className="px-3 py-2 font-semibold placeholder-gray-500 text-black rounded-2xl
         border-none ring-2 ring-gray-300 focus:ring-gray-500 focus:ring-2"onChange={ handleTitle } type="text" name="title" 
-        placeholder="Book title..." />
-        <input className="px-3 py-2 font-semibold placeholder-gray-500 text-black rounded-2xl
+        placeholder="Book title..." /></span>
+        <span className="px-2 py-2"><input className="px-3 py-2 font-semibold placeholder-gray-500 text-black rounded-2xl
         border-none ring-2 ring-gray-300 focus:ring-gray-500 focus:ring-2"onChange={ handleAuthor } type="text" name="author" 
-        placeholder="Author name..." /><br></br>
-        <input className="px-3 py-2 font-semibold placehold>er-gray-500 text-black rounded-2xl
+        placeholder="Author name..." /></span><br></br>
+        <span className="px-2 py-2"><input className="px-3 py-2 font-semibold placeholder-gray-500 text-black rounded-2xl
         border-none ring-2 ring-gray-300 focus:ring-gray-500 focus:ring-2"onChange={ handleGenre } type="text" name="genre" 
-        placeholder="Genre..." />
-        <input className="px-3 py-2 font-semibold placeholder-gray-500 text-black rounded-2xl
+        placeholder="Genre..." /></span>
+        <span className="px-2 py-2"><input className="px-3 py-2 font-semibold placeholder-gray-500 text-black rounded-2xl
         border-none ring-2 ring-gray-300 focus:ring-gray-500 focus:ring-2"onChange={ handleYear } type="text" name="year" 
-        placeholder="Year published..." /><br></br>
-        <input className="px-3 py-2 font-semibold placeholder-gray-500 text-black rounded-2xl
+        placeholder="Year published..." /></span><br></br>
+        <span className="px-2 py-2"><input className="px-3 py-2 font-semibold placeholder-gray-500 text-black rounded-2xl
         border-none ring-2 ring-gray-300 focus:ring-gray-500 focus:ring-2"onChange={ handleImage } type="text" name="image"
-        placeholder="Image URL..." />
-        <input className="px-3 py-2 font-semibold placeholder-gray-500 text-black rounded-2xl
+        placeholder="Image URL..." /></span>
+        <span className="px-2 py-2"><input className="px-3 py-2 font-semibold placeholder-gray-500 text-black rounded-2xl
         border-none ring-2 ring-gray-300 focus:ring-gray-500 focus:ring-2" onChange={ handleReview } type="text" name="review" 
-        placeholder="Your review..." /><br></br>
-      <button type="submit">Add Book</button>
+        placeholder="Your review..." /></span><br></br>
+      <span className="px-2 py-2"><button type="submit">Add Book</button></span>
     </form>
   </div>
     );
