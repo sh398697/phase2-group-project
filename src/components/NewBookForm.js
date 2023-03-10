@@ -30,7 +30,7 @@ function NewBookForm({currentUser, addBookToState}) {
       owner: ""
     }
 
-    fetch( 'http://localhost:6001/books', {
+    fetch( 'https://json-server-template-4sub.onrender.com/books', {
       method: 'POST', 
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify( newBook )

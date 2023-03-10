@@ -27,7 +27,7 @@ function HomePage({books, setBooks, currentUser, checkOutBook}) {
   const searchedBooks = books.filter( byKeyword )
 
   useEffect( () => {
-    fetch( 'http://localhost:6001/books' )
+    fetch( 'https://json-server-template-4sub.onrender.com/books/books' )
       .then( r => r.json() )
       .then( setBooks )
   }, [] )
