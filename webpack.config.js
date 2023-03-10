@@ -1,6 +1,6 @@
 module.exports = {
     entry: {
-      main: './src/components/App.js',
+      main: './src/index.js',
     },
     output: {
       // `filename` provides a template for naming your bundles (remember to use `[name]`)
