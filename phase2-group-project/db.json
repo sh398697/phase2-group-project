@@ -61,12 +61,12 @@
     },
     {
       "id": 7,
-      "title": "The Da Vinci Code",
-      "author": "Dan Brown",
-      "genre": "Mystery",
-      "year": "2003",
-      "image": "https://m.media-amazon.com/images/I/513jDWxi4nL._SY344_BO1,204,203,200_.jpg",
-      "review": "A fast-paced and engaging thriller that will keep you guessing until the very end.",
+      "title": "Ishmael",
+      "author": "Daniel Quinn",
+      "genre": "Philisophy",
+      "year": "1992",
+      "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1529680413i/40611328.jpg",
+      "review": "A must-read!",
       "owner": ""
     },
     {
@@ -200,12 +200,12 @@
       "id": 21
     },
     {
-      "title": "Ishmael",
-      "author": "Daniel Quinn",
-      "genre": "Philisophy",
-      "year": "1992",
-      "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1529680413i/40611328.jpg",
-      "review": "A must-read!",
+      "title": "The Da Vinci Code",
+      "author": "Dan Brown",
+      "genre": "Mystery",
+      "year": "2003",
+      "image": "https://m.media-amazon.com/images/I/513jDWxi4nL._SY344_BO1,204,203,200_.jpg",
+      "review": "A fast-paced and engaging thriller that will keep you guessing until the very end.",
       "owner": "",
       "id": 22
     },
