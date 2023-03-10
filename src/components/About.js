@@ -13,13 +13,13 @@ function About() {
         <div className="carousel_wrapper">
           <div className="carousel">
             <div className="slide one">
-              <img src="https://ca.slack-edge.com/T02MD9XTF-U04L3K0PLQ5-b5bb1a363a19-512" />
+              <img src="https://ca.slack-edge.com/T02MD9XTF-U04L3K0PLQ5-b5bb1a363a19-512" alt="Daniele" />
             </div>
             <div className="slide two">
-              <img src="https://ca.slack-edge.com/T02MD9XTF-U04LU7VCF5E-13721bad56dc-512" />
+              <img src="https://ca.slack-edge.com/T02MD9XTF-U04LU7VCF5E-13721bad56dc-512" alt="Elif" />
             </div>
             <div className="slide three">
-              <img src="https://ca.slack-edge.com/T02MD9XTF-U04L0J1CKU4-b53aa6398b67-512" />
+              <img src="https://ca.slack-edge.com/T02MD9XTF-U04L0J1CKU4-b53aa6398b67-512" alt="Scott" />
             </div>
         </div>
       </div>
