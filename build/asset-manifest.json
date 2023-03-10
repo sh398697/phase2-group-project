@@ -1,13 +1,10 @@
 {
-  "main.css": "/static/css/main.b6ba8599.chunk.css",
-  "main.js": "/static/js/main.3182cdfa.chunk.js",
-  "main.js.map": "/static/js/main.3182cdfa.chunk.js.map",
-  "static/js/1.77ea3495.chunk.js": "/static/js/1.77ea3495.chunk.js",
-  "static/js/1.77ea3495.chunk.js.map": "/static/js/1.77ea3495.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
-  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
-  "static/css/main.b6ba8599.chunk.css.map": "/static/css/main.b6ba8599.chunk.css.map",
-  "index.html": "/index.html",
-  "precache-manifest.113d63ee38e3900678b0e1af2e62c7a0.js": "/precache-manifest.113d63ee38e3900678b0e1af2e62c7a0.js",
-  "service-worker.js": "/service-worker.js"
+  "files": {
+    "main.js": "/sh398697/phase2-group-project/static/js/main.427c82bc.js",
+    "index.html": "/sh398697/phase2-group-project/index.html",
+    "main.427c82bc.js.map": "/sh398697/phase2-group-project/static/js/main.427c82bc.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.427c82bc.js"
+  ]
 }

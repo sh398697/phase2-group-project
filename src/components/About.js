@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/carousel.css"
-//import "https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"
+import "https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"
 
 function About() {
   return (
